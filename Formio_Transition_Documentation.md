@@ -37,10 +37,10 @@ FORMIO_ROOT_PASSWORD=changeme
 # Server config
 FORMIO_DEFAULT_PROJECT_URL=http://{your-ip-address}:3001
 FORMIO_JWT_SECRET=--- change me now ---
-
+FORMIO_JWT_EXPIRE=240
 # Multi-tenancy and UI installation
 MULTI_TENANCY_ENABLED=false
-NO_INSTALL=1
+NO_INSTALL=1  #this will handle the formsflow-forms ui
 ```
 
 ### 2.3 Running with Docker
@@ -103,14 +103,4 @@ const data = {
 - Introduced `displayForRole` property (used in `removeProtectedFields`, `alterCurrentSubmissionWithPrevious`).
 - Added `/forms/search` endpoint to filter by `path`, `name`, or `title` (in `FormListingByPathTitleName.js`).
 
-## 5. Useful Tips
-
-- Always validate `role` and `submissionAccess` configurations.
-
-- Use REST clients like Postman to verify changes.
-
-- Prefer Docker for consistent local development environments.
-
-## 6. Additional Notes
-
-*You can add further knowledge here as you document more during the transition.*
+ 
