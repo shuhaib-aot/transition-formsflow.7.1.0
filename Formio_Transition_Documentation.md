@@ -90,17 +90,17 @@ We’ve made the following customizations:
 - Added `NO_INSTALL` env variable to control UI installation.
 - Included `Client.zip` directly in the repo instead of downloading it.
 - Added `skip-sanitize` header to bypass schema validation on submission.
-- Created `/form/:formId/metadata` to return simplified form metadata:
-```js
-const data = {
+- Created `/form/:formId/metadata` to return simplified form metadata with turn some details instead of full component:
+```
+ {
   name: com.key,
   label: com.label,
   type: com.type
-};
+}
 ```
-- Fixed bundle submission auth logic to return only current form’s data.
-- Enhanced `/form` endpoint with `formIds` query param (handled in `handleFormlist.js`).
-- Introduced `displayForRole` property (used in `removeProtectedFields`, `alterCurrentSubmissionWithPrevious`).
-- Added `/forms/search` endpoint to filter by `path`, `name`, or `title` (in `FormListingByPathTitleName.js`).
+- Fixed bundle submission auth logic to return only current form’s data instead full submission, here we need to pass the formid as parameter then it will return the data against that form.
+- Enhanced `/form` endpoint with `formIds` query param (handled in `handleFormlist.js`) it will return the form details against the ids in formIds query parameter.
+- Introduced `displayForRole` property (used in `removeProtectedFields`, `alterCurrentSubmissionWithPrevious`) to restrict submission data access against a perticular field.
+- Added `/forms/search` endpoint to filter by `path`, `name`, or `title` (in `FormListingByPathTitleName.js`) it will return the form details based on `select` query parameter.
 
  
