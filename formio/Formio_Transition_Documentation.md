@@ -104,3 +104,5 @@ We’ve made the following customizations:
 - Added `/forms/search` endpoint to filter by `path`, `name`, or `title` (in `FormListingByPathTitleName.js`) it will return the form details based on `select` query parameter.
 
  [postman collection] (https://documenter.getpostman.com/view/684631/formio-api-documentation/2Jvuks)
+
+ ## How formio communicate with formsflow.ai and token handling
