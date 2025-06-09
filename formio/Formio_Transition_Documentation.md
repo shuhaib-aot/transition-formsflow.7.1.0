@@ -106,3 +106,5 @@ We’ve made the following customizations:
  [postman collection] (https://documenter.getpostman.com/view/684631/formio-api-documentation/2Jvuks)
 
  ## How formio communicate with formsflow.ai and token handling
+
+https://excalidraw.com/#json=OGt_EtvLQBmcDahKgGREP,oT55_fc45n7mNK2Nd7fCsw
