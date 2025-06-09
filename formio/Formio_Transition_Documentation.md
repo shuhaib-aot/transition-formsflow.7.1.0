@@ -108,3 +108,4 @@ We’ve made the following customizations:
  ## How formio communicate with formsflow.ai and token handling
 
 https://excalidraw.com/#json=3OHWDA-vZPHe8yADA1Ewr,JJIe7ZZjHrCtZVGvY3-NiA
+https://help.form.io/developers/roles-and-permissions
