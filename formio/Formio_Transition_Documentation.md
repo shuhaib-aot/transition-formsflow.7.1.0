@@ -128,15 +128,18 @@ We’ve made the following customizations:
 
 ---
 
-## 3. `/form/<formId>/submission/<submissionId>
+## 3. /form/formId/submission/submissionId
+
 **GET**
   Get the form submission data using formid and submission id
+  
 **PUT**
   Update the form submission 
+  
 **PATCH**
   Update the form submission data partically but this api commonly using from bpmn side
 
-
+---
 
 
 
