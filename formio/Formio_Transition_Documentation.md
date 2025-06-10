@@ -103,7 +103,48 @@ We’ve made the following customizations:
 - Introduced `displayForRole` property (used in `removeProtectedFields`, `alterCurrentSubmissionWithPrevious`) to restrict submission data access against a perticular field.
 - Added `/forms/search` endpoint to filter by `path`, `name`, or `title` (in `FormListingByPathTitleName.js`) it will return the form details based on `select` query parameter.
 
+# API Endpoints Documentation
+
+## 1. /form
+
+**POST**  
+  Used for form creation, but it is using the web API internally.
+
+**PUT**  
+  Used for updating the form, also used through the web API.
+
+**GET**  
+  Used for fetching form data.
+
+**DELETE**  
+  Used to delete the form.
+
+---
+
+## 2. /form/<formId>/submissions
+
+**POST**  
+  Create the submission against a form.
+
+---
+
+## 3. `/form/<formId>/submission/<submissionId>
+**GET**
+  Get the form submission data using formid and submission id
+**PUT**
+  Update the form submission 
+**PATCH**
+  Update the form submission data partically but this api commonly using from bpmn side
+
+
+
+
+
  [postman collection] (https://documenter.getpostman.com/view/684631/formio-api-documentation/2Jvuks)
+
+
+
+
 
  ## How formio communicate with formsflow.ai and token handling
 
